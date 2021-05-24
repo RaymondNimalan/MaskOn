@@ -1,10 +1,10 @@
 import React from 'react'
-import UserHome from './components/UserHome'
+import Home from './components/Home'
 
 const App = () => {
   return (
     <div>
-      <UserHome />
+      <Home />
     </div>
   )
 }
