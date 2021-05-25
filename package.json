@@ -42,6 +42,7 @@
   "license": "MIT",
   "dependencies": {
     "@google-cloud/language": "^4.2.1",
+    "@google-cloud/vision": "^2.3.2",
     "axios": "^0.21.1",
     "compression": "^1.7.3",
     "connect-session-sequelize": "^6.0.0",

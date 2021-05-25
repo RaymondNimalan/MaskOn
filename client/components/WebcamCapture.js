@@ -30,7 +30,7 @@ const WebcamCapture = () => {
         //videoConstraints={videoConstraints}
       />
       <button
-        type={button}
+        type="button"
         onClick={e => {
           e.preventDefault()
           capture()
@@ -39,7 +39,7 @@ const WebcamCapture = () => {
         Capture photo
       </button>
       <button
-        type={button}
+        type="button"
         onClick={e => {
           e.preventDefault()
           removeImg()

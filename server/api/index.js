@@ -1,7 +1,7 @@
 const router = require('express').Router()
 module.exports = router
 
-router.use('/home', require('./forms'))
+router.use('/', require('./photo.js'))
 
 router.use((req, res, next) => {
   const error = new Error('Not Found')
