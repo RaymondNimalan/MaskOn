@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {connect, useDispatch, useSelector} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import Webcam from 'react-webcam'
 import {_analysis} from '../store/photo'
 
@@ -8,7 +8,7 @@ const WebcamCapture = () => {
 
   const dispatch = useDispatch()
 
-  const photoReducer = useSelector(state => state.photoReducer)
+  const {labels, mask} = useSelector(state => state.photoReducer)
 
   const webcamRef = React.useRef(null)
 
@@ -17,6 +17,13 @@ const WebcamCapture = () => {
       console.log('image', image)
     },
     [image]
+  )
+
+  useEffect(
+    () => {
+      console.log(labels)
+    },
+    [labels]
   )
 
   const capture = React.useCallback(

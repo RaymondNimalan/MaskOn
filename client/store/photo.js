@@ -6,9 +6,9 @@ export const ANALYSIS = 'ANALYSIS'
 
 // ACTION CREATOR
 
-export const analysis = photo => ({
+export const analysis = data => ({
   type: ANALYSIS,
-  photo
+  data
 })
 
 // THUNK
@@ -27,14 +27,14 @@ export const _analysis = image => async dispatch => {
 }
 
 const intialState = {
-  photo: '',
+  labels: [],
   mask: null
 }
 
 const photoReducer = (state = intialState, action) => {
   switch (action.type) {
     case ANALYSIS:
-      return state
+      return {...state, labels: action.data}
     default:
       return state
   }
