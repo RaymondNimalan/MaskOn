@@ -25,8 +25,8 @@ router.post('/', async (req, res, next) => {
     })
     const labels = result.labelAnnotations
     console.log('Labels!:')
-    labels.forEach(label => console.log('->', label.description))
-    res.send(labels)
+
+    res.send(labels.map(label => label.description))
   } catch (err) {
     next(err)
   }
