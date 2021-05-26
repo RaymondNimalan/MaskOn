@@ -13,20 +13,28 @@ export const analysis = photo => ({
 
 // THUNK
 
-export const _analysis = photo => async dispatch => {
+export const _analysis = image => async dispatch => {
   try {
-    const {data} = await axios.post('/api/', photo)
+    //console.log('hello from thunk')
+    console.log('image from thunk', image)
+    //const newImage = new
+    const {data} = await axios.post('/api/', image)
+    console.log('data from thunk', data)
+    dispatch(analysis(data))
   } catch (error) {
     console.log(error)
   }
 }
 
-const intialState = {}
+const intialState = {
+  photo: '',
+  mask: null
+}
 
 const photoReducer = (state = intialState, action) => {
   switch (action.type) {
     case ANALYSIS:
-      return action.photo
+      return state
     default:
       return state
   }

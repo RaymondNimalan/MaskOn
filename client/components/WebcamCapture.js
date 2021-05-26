@@ -1,22 +1,34 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import {connect, useDispatch, useSelector} from 'react-redux'
 import Webcam from 'react-webcam'
+import {_analysis} from '../store/photo'
 
 const WebcamCapture = () => {
-  const [src, setSrc] = useState('')
+  const [image, setImage] = useState('')
+
+  const dispatch = useDispatch()
+
+  const photoReducer = useSelector(state => state.photoReducer)
 
   const webcamRef = React.useRef(null)
+
+  useEffect(
+    () => {
+      console.log('image', image)
+    },
+    [image]
+  )
 
   const capture = React.useCallback(
     () => {
       const imageSrc = webcamRef.current.getScreenshot()
-      console.log(imageSrc)
-      setSrc(imageSrc)
+      setImage(imageSrc)
     },
     [webcamRef]
   )
 
   const removeImg = () => {
-    setSrc(null)
+    setImage(null)
   }
 
   return (
@@ -47,7 +59,16 @@ const WebcamCapture = () => {
       >
         Remove Image
       </button>
-      <img src={src} />
+      <button
+        type="button"
+        onClick={e => {
+          e.preventDefault()
+          dispatch(_analysis({image}))
+        }}
+      >
+        Analyze
+      </button>
+      <img src={image} />
     </>
   )
 }
