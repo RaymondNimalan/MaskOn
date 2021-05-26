@@ -3,6 +3,7 @@ const photo = './public/images/photo1.png'
 
 router.post('/', async (req, res, next) => {
   try {
+    console.log('hello from google route')
     // Imports the Google Cloud client library
     const vision = require('@google-cloud/vision')
 
@@ -12,12 +13,20 @@ router.post('/', async (req, res, next) => {
       projectId: 'vision-api-project-302822'
     })
     //console.log('req.body', req.body)
+    const {image} = req.body
+    var imageSliced = image.replace(/^data:image\/[a-z]+;base64,/, '')
+    console.log('data from req', imageSliced)
 
     // Performs label detection on the image file
-    const [result] = await client.labelDetection(photo)
+    const [result] = await client.labelDetection({
+      image: {
+        content: imageSliced
+      }
+    })
     const labels = result.labelAnnotations
     console.log('Labels!:')
     labels.forEach(label => console.log('->', label.description))
+    res.send(labels)
   } catch (err) {
     next(err)
   }
