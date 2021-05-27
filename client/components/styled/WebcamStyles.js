@@ -2,10 +2,12 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   height: 800px;
   width: 100%;
   align-items: center;
+  padding-top: 80px;
 `
 
 export const CameraContainer = styled.div`
