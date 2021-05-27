@@ -15,11 +15,7 @@ export const analysis = data => ({
 
 export const _analysis = image => async dispatch => {
   try {
-    //console.log('hello from thunk')
-    console.log('image from thunk', image)
-    //const newImage = new
     const {data} = await axios.post('/api/', image)
-    console.log('data from thunk', data)
     dispatch(analysis(data))
   } catch (error) {
     console.log(error)
