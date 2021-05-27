@@ -58,6 +58,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^4.2.0",
     "react-redux": "^7.0.1",
     "react-router-dom": "^5.0.0",
     "react-webcam": "^5.2.3",
@@ -67,6 +68,7 @@
     "sequelize": "^5.22.3",
     "socket.io": "^2.2.0",
     "style-loader": "^2.0.0",
+    "styled-components": "^5.3.0",
     "twitter": "^1.7.1",
     "twitter-lite": "^1.1.0",
     "twitter-v2": "^1.1.0"

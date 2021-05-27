@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import Webcam from 'react-webcam'
 import {_analysis} from '../store/photo'
+import {FiCamera, FiTrash2, FiShare} from 'react-icons/fi'
+import {ButtonContainer, MainContainer} from './styled/WebcamStyles'
 
 const WebcamCapture = () => {
   const [image, setImage] = useState('')
@@ -41,42 +43,39 @@ const WebcamCapture = () => {
 
   return (
     <>
-      <Webcam
-        audio={false}
-        height={360}
-        ref={webcamRef}
-        screenshotFormat="image/jpeg"
-        width={640}
-        //videoConstraints={videoConstraints}
-      />
-      <button
-        type="button"
-        onClick={e => {
-          e.preventDefault()
-          capture()
-        }}
-      >
-        Capture photo
-      </button>
-      <button
-        type="button"
-        onClick={e => {
-          e.preventDefault()
-          removeImg()
-        }}
-      >
-        Remove Image
-      </button>
-      <button
-        type="button"
-        onClick={e => {
-          e.preventDefault()
-          dispatch(_analysis({image}))
-        }}
-      >
-        Analyze
-      </button>
-      <img src={image} />
+      <MainContainer>
+        <Webcam
+          audio={false}
+          height={360}
+          ref={webcamRef}
+          screenshotFormat="image/jpeg"
+          width={640}
+          //videoConstraints={videoConstraints}
+        />
+        <ButtonContainer>
+          <FiCamera
+            onClick={e => {
+              e.preventDefault()
+              capture()
+            }}
+          />
+          <FiTrash2
+            type="button"
+            onClick={e => {
+              e.preventDefault()
+              removeImg()
+            }}
+          />
+          <FiShare
+            type="button"
+            onClick={e => {
+              e.preventDefault()
+              dispatch(_analysis({image}))
+            }}
+          />
+        </ButtonContainer>
+        <img src={image} />
+      </MainContainer>
     </>
   )
 }
