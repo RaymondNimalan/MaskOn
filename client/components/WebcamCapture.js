@@ -5,23 +5,24 @@ import {_analysis} from '../store/photo'
 
 const WebcamCapture = () => {
   const [image, setImage] = useState('')
+  const [mask, setMask] = useState(false)
 
   const dispatch = useDispatch()
 
-  const {labels, mask} = useSelector(state => state.photoReducer)
+  const {labels} = useSelector(state => state.photoReducer)
 
   const webcamRef = React.useRef(null)
 
-  useEffect(
-    () => {
-      console.log('image', image)
-    },
-    [image]
-  )
+  // useEffect(() => {
+  //   console.log('image', image)
+  // }, [image])
 
   useEffect(
     () => {
       console.log(labels)
+      if (labels.includes('Mask')) {
+        setMask(true)
+      }
     },
     [labels]
   )

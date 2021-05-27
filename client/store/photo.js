@@ -27,8 +27,7 @@ export const _analysis = image => async dispatch => {
 }
 
 const intialState = {
-  labels: [],
-  mask: null
+  labels: []
 }
 
 const photoReducer = (state = intialState, action) => {
