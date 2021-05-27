@@ -6,7 +6,8 @@ import {FiCamera, FiTrash2, FiShare} from 'react-icons/fi'
 import {
   ButtonContainer,
   MainContainer,
-  CameraContainer
+  CameraContainer,
+  Icon
 } from './styled/WebcamStyles'
 
 const WebcamCapture = () => {
@@ -51,10 +52,10 @@ const WebcamCapture = () => {
         {!image ? (
           <Webcam
             audio={false}
-            height={360}
+            //height={360}
             ref={webcamRef}
             screenshotFormat="image/jpeg"
-            width={640}
+            //width={640}
             //videoConstraints={videoConstraints}
           />
         ) : (
@@ -62,24 +63,30 @@ const WebcamCapture = () => {
         )}
       </CameraContainer>
       <ButtonContainer>
-        <FiCamera
-          onClick={e => {
-            e.preventDefault()
-            capture()
-          }}
-        />
-        <FiTrash2
-          onClick={e => {
-            e.preventDefault()
-            removeImg()
-          }}
-        />
-        <FiShare
-          onClick={e => {
-            e.preventDefault()
-            dispatch(_analysis({image}))
-          }}
-        />
+        <Icon>
+          <FiTrash2
+            onClick={e => {
+              e.preventDefault()
+              removeImg()
+            }}
+          />
+        </Icon>
+        <Icon>
+          <FiCamera
+            onClick={e => {
+              e.preventDefault()
+              capture()
+            }}
+          />
+        </Icon>
+        <Icon>
+          <FiShare
+            onClick={e => {
+              e.preventDefault()
+              dispatch(_analysis({image}))
+            }}
+          />
+        </Icon>
       </ButtonContainer>
     </MainContainer>
   )
