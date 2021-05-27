@@ -3,7 +3,11 @@ import {useDispatch, useSelector} from 'react-redux'
 import Webcam from 'react-webcam'
 import {_analysis} from '../store/photo'
 import {FiCamera, FiTrash2, FiShare} from 'react-icons/fi'
-import {ButtonContainer, MainContainer} from './styled/WebcamStyles'
+import {
+  ButtonContainer,
+  MainContainer,
+  CameraContainer
+} from './styled/WebcamStyles'
 
 const WebcamCapture = () => {
   const [image, setImage] = useState('')
@@ -42,41 +46,42 @@ const WebcamCapture = () => {
   }
 
   return (
-    <>
-      <MainContainer>
-        <Webcam
-          audio={false}
-          height={360}
-          ref={webcamRef}
-          screenshotFormat="image/jpeg"
-          width={640}
-          //videoConstraints={videoConstraints}
+    <MainContainer>
+      <CameraContainer>
+        {!image ? (
+          <Webcam
+            audio={false}
+            height={360}
+            ref={webcamRef}
+            screenshotFormat="image/jpeg"
+            width={640}
+            //videoConstraints={videoConstraints}
+          />
+        ) : (
+          <img src={image} />
+        )}
+      </CameraContainer>
+      <ButtonContainer>
+        <FiCamera
+          onClick={e => {
+            e.preventDefault()
+            capture()
+          }}
         />
-        <ButtonContainer>
-          <FiCamera
-            onClick={e => {
-              e.preventDefault()
-              capture()
-            }}
-          />
-          <FiTrash2
-            type="button"
-            onClick={e => {
-              e.preventDefault()
-              removeImg()
-            }}
-          />
-          <FiShare
-            type="button"
-            onClick={e => {
-              e.preventDefault()
-              dispatch(_analysis({image}))
-            }}
-          />
-        </ButtonContainer>
-        <img src={image} />
-      </MainContainer>
-    </>
+        <FiTrash2
+          onClick={e => {
+            e.preventDefault()
+            removeImg()
+          }}
+        />
+        <FiShare
+          onClick={e => {
+            e.preventDefault()
+            dispatch(_analysis({image}))
+          }}
+        />
+      </ButtonContainer>
+    </MainContainer>
   )
 }
 
