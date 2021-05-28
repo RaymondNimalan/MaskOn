@@ -4,18 +4,17 @@ import {FiEyeOff, FiEye} from 'react-icons/fi'
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 8px;
 `
 
-export const HowItWorks = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 16px;
-  width: 100%;
+export const HowItWorks = styled(Content)`
+  padding: 8px 8px;
   h1 {
     display: flex;
     font-size: 24px;
     align-items: center;
+  }
+  p {
+    padding: 0px 4px;
   }
 `
 export const Instructions = styled(HowItWorks)``
