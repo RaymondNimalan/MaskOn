@@ -3,6 +3,7 @@ import React from 'react'
 import WebcamCapture from './components/WebcamCapture'
 import Mask from './components/Mask'
 import Nav from './components/Nav'
+import About from './components/About'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Nav />
       <WebcamCapture />
       <Mask />
+      <About />
     </div>
   )
 }
