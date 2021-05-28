@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Navbar = styled.nav`
-  display: flex;
+  display: none;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -9,6 +9,10 @@ export const Navbar = styled.nav`
   background: black;
   align-items: center;
   flex-direction: row;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
 `
 
 export const NavMenu = styled.div`

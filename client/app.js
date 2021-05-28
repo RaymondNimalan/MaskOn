@@ -4,14 +4,17 @@ import WebcamCapture from './components/WebcamCapture'
 import Mask from './components/Mask'
 import Nav from './components/Nav'
 import About from './components/About'
+import SideBar from './components/SideBar'
+import Home from './components/Home'
 
 const App = () => {
   return (
     <div>
       <Nav />
-      <WebcamCapture />
+      <Home />
+
       <Mask />
-      <About />
+      {/* <About /> */}
     </div>
   )
 }

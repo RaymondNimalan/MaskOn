@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.div`
-  display: flex;
+  display: inline-flex;
   position: relative;
   flex-direction: column;
   height: 800px;
   width: 100%;
   align-items: center;
-  padding-top: 60px;
+  //padding-left: 100px;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+  }
 `
 
 export const CameraContainer = styled.div`
@@ -15,6 +18,7 @@ export const CameraContainer = styled.div`
   width: 100%;
   height: 480px;
   justify-content: center;
+  background-color: blue;
 `
 
 export const ButtonContainer = styled.div`
