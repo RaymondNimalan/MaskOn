@@ -32,6 +32,7 @@ export const ButtonContainer = styled.div`
 
 export const Icon = styled.div`
   display: flex;
+  font-size: 48px;
   cursor: pointer;
   margin: 0px 32px 0px 32px;
 `
@@ -41,3 +42,7 @@ export const Icon = styled.div`
 // export const CameraContainer = styled.div``
 
 // export const CameraContainer = styled.div``
+
+// onClick={() => {
+//     setInfo(!infoToggle)
+//   }}
