@@ -14,20 +14,6 @@ const About = () => {
   const [infoToggle, setInfo] = useState(false)
   const [instructionToggle, setInstruct] = useState(false)
 
-  useEffect(
-    () => {
-      console.log('infoToggle', infoToggle)
-    },
-    [infoToggle]
-  )
-
-  useEffect(
-    () => {
-      console.log('instructionToggle', instructionToggle)
-    },
-    [instructionToggle]
-  )
-
   return (
     <Content>
       <HowItWorks>

@@ -24,15 +24,14 @@ const WebcamCapture = () => {
   //   console.log('image', image)
   // }, [image])
 
-  useEffect(
-    () => {
-      console.log(labels)
-      if (labels.includes('Mask')) {
-        setMask(true)
-      }
-    },
-    [labels]
-  )
+  // useEffect(
+  //   () => {
+  //     if (labels.includes('Mask')) {
+  //       setMask(true)
+  //     }
+  //   },
+  //   [labels]
+  // )
 
   const capture = React.useCallback(
     () => {
