@@ -1,4 +1,5 @@
 import axios from 'axios'
+import {toggle} from './toggle'
 
 // INITIAL STATE
 
@@ -46,12 +47,10 @@ export const _analysis = image => async dispatch => {
     dispatch(analysis(data))
     setTimeout(() => {
       dispatch(loading())
-    }, 3000)
-    // if (intialState.labels.includes('Beard')) {
-    //   dispatch(maskOn())
-    // } else {
-    //   dispatch(maskOff())
-    // }
+    }, 4000)
+    setTimeout(() => {
+      dispatch(toggle())
+    }, 4001)
   } catch (error) {
     console.log(error)
   }
@@ -63,6 +62,10 @@ const photoReducer = (state = intialState, action) => {
       return {...state, labels: action.data}
     case LOADING:
       return {...state, loading: !state.loading}
+    case MASK_TRUE:
+      return {...state, mask: true}
+    case MASK_FALSE:
+      return {...state, mask: false}
     default:
       return state
   }
