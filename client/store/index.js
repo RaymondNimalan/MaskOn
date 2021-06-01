@@ -3,8 +3,9 @@ import thunkMiddleware from 'redux-thunk'
 import {createLogger} from 'redux-logger'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import photoReducer from './photo'
+import toggleReducer from './toggle'
 
-const reducer = combineReducers({photoReducer})
+const reducer = combineReducers({photoReducer, toggleReducer})
 
 const middleware = composeWithDevTools(
   applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
