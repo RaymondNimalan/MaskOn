@@ -15,16 +15,62 @@ router.post('/', async (req, res, next) => {
     //console.log('req.body', req.body)
     const {image} = req.body
     var imageSliced = image.replace(/^data:image\/[a-z]+;base64,/, '')
-    console.log('data from req', imageSliced)
+    //console.log('data from req', imageSliced)
+
+    // Alters request sent to google api
+
+    // const request = client.annotateImage({
+    //   requests: [
+    //     {
+    //       image: {
+    //         content: imageSliced,
+    //       },
+    //       features: [
+    //         {
+    //           maxResults: 15,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // })
+
+    // {
+    //   image: {
+    //     content: imageSliced,
+    //   }
+    // }
+
+    // Object localization
+
+    // const [result] = await client.annotateImage({
+    //   image: {
+    //     content: imageSliced,
+    //   },
+    //   features: [
+    //     {
+    //       type: 'OBJECT_LOCALIZATION',
+    //       maxResults: 15,
+    //     },
+    //   ],
+    // })
+    // const objects = result.localizedObjectAnnotations
+
+    // console.log(objects)
 
     // Performs label detection on the image file
-    const [result] = await client.labelDetection({
+    const [resultLabel] = await client.annotateImage({
       image: {
         content: imageSliced
-      }
+      },
+      features: [
+        {
+          type: 'LABEL_DETECTION',
+          maxResults: 15
+        }
+      ]
     })
-    const labels = result.labelAnnotations
-    console.log('Labels!:')
+
+    const labels = resultLabel.labelAnnotations
 
     res.send(labels.map(label => label.description))
   } catch (err) {
