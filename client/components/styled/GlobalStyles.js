@@ -10,6 +10,12 @@ const GlobalStyle = createGlobalStyle`
 html, body {
     overflow-x: hidden;
 }
+
+.animated {
+    display: flex;
+    height: 500px;
+
+}
 `
 
 export default GlobalStyle
