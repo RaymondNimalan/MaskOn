@@ -14,14 +14,37 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: row;
 `
+const SideBarContainer = styled.div`
+  display: flex;
+`
 
+const MainContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+`
+const LoadingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`
 const App = () => {
   const {loading} = useSelector(state => state.photoReducer)
   return (
     <AppContainer>
       <Nav />
-      <SideBar />
-      {loading ? <LoadingSet /> : <Home />}
+      <SideBarContainer>
+        <SideBar />
+      </SideBarContainer>
+      <MainContainer>
+        {loading ? (
+          <LoadingContainer>
+            <LoadingSet />
+          </LoadingContainer>
+        ) : (
+          <Home />
+        )}
+      </MainContainer>
     </AppContainer>
   )
 }
