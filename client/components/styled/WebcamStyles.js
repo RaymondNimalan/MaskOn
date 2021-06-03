@@ -2,21 +2,21 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   display: flex;
-  //position: relative;
+  max-width: 640px;
   flex-direction: column;
-  height: 800px;
+  justify-content: center;
   align-items: center;
-  //padding-left: 100px;
+  background-color: black;
+  border: 16px solid;
+  border-color: purple;
   @media screen and (max-width: 768px) {
-    padding-top: 60px;
+    //padding-top: 60px;
   }
 `
 
 export const CameraContainer = styled.div`
   display: flex;
-  height: 480px;
-  justify-content: center;
-  background-color: blue;
+  padding-top: 100px;
 `
 
 export const ButtonContainer = styled.div`
@@ -26,6 +26,7 @@ export const ButtonContainer = styled.div`
   font-size: 48px;
   align-items: center;
   justify-content: space-between;
+  color: white;
 `
 
 export const Icon = styled.div`
@@ -35,12 +36,8 @@ export const Icon = styled.div`
   margin: 0px 32px 0px 32px;
 `
 
-// export const CameraContainer = styled.div``
+//export const WebCam = styled(Webcam)``
 
 // export const CameraContainer = styled.div``
 
 // export const CameraContainer = styled.div``
-
-// onClick={() => {
-//     setInfo(!infoToggle)
-//   }}

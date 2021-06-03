@@ -7,7 +7,8 @@ import {
   ButtonContainer,
   MainContainer,
   CameraContainer,
-  Icon
+  Icon,
+  WebCam
 } from './styled/WebcamStyles'
 
 const WebcamCapture = () => {
@@ -50,6 +51,7 @@ const WebcamCapture = () => {
       <CameraContainer>
         {!image ? (
           <Webcam
+            className="webcam"
             audio={false}
             //height={360}
             ref={webcamRef}

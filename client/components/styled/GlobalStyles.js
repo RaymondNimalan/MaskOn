@@ -16,6 +16,13 @@ html, body {
     height: 500px;
 
 }
+.webcam {
+    display: flex;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
 `
 
 export default GlobalStyle

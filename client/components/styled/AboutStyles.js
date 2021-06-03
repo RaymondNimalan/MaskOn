@@ -4,6 +4,7 @@ import {FiEyeOff, FiEye} from 'react-icons/fi'
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 350px;
 `
 
 export const HowItWorks = styled(Content)`
