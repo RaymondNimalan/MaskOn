@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   display: flex;
-  max-width: 640px;
+  //max-width: 640px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: black;
-  border: 16px solid;
-  border-color: purple;
+  border: medium ridge #263237; /* border: 16px solid;
+  border-color: #a3708a; */
   @media screen and (max-width: 768px) {
     //padding-top: 60px;
   }
@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
 
 export const CameraContainer = styled.div`
   display: flex;
-  padding-top: 100px;
+  //padding-top: 100px;
 `
 
 export const ButtonContainer = styled.div`
@@ -36,7 +36,43 @@ export const Icon = styled.div`
   margin: 0px 32px 0px 32px;
 `
 
-//export const WebCam = styled(Webcam)``
+export const Tablet = styled.div`
+  display: flex;
+  position: relative;
+  //justify-content: space-between;
+  //width: 768px;
+  //height: 1024px;
+  height: 100vh;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  &:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  :before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+`
 
 // export const CameraContainer = styled.div``
 

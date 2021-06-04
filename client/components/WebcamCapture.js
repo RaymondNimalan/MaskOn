@@ -8,7 +8,7 @@ import {
   MainContainer,
   CameraContainer,
   Icon,
-  WebCam
+  Tablet
 } from './styled/WebcamStyles'
 
 const WebcamCapture = () => {
@@ -47,50 +47,52 @@ const WebcamCapture = () => {
   }
 
   return (
-    <MainContainer>
-      <CameraContainer>
-        {!image ? (
-          <Webcam
-            className="webcam"
-            audio={false}
-            //height={360}
-            ref={webcamRef}
-            screenshotFormat="image/jpeg"
-            screenshotQuality={1}
-            //width={640}
-            //videoConstraints={videoConstraints}
-          />
-        ) : (
-          <img src={image} />
-        )}
-      </CameraContainer>
-      <ButtonContainer>
-        <Icon>
-          <FiTrash2
-            onClick={e => {
-              e.preventDefault()
-              removeImg()
-            }}
-          />
-        </Icon>
-        <Icon>
-          <FiCamera
-            onClick={e => {
-              e.preventDefault()
-              capture()
-            }}
-          />
-        </Icon>
-        <Icon>
-          <FiShare
-            onClick={e => {
-              e.preventDefault()
-              dispatch(_analysis({image}))
-            }}
-          />
-        </Icon>
-      </ButtonContainer>
-    </MainContainer>
+    <Tablet>
+      <MainContainer>
+        <CameraContainer>
+          {!image ? (
+            <Webcam
+              className="webcam"
+              audio={false}
+              //height={360}
+              ref={webcamRef}
+              screenshotFormat="image/jpeg"
+              screenshotQuality={1}
+              //width={640}
+              //videoConstraints={videoConstraints}
+            />
+          ) : (
+            <img src={image} />
+          )}
+        </CameraContainer>
+        <ButtonContainer>
+          <Icon>
+            <FiTrash2
+              onClick={e => {
+                e.preventDefault()
+                removeImg()
+              }}
+            />
+          </Icon>
+          <Icon>
+            <FiCamera
+              onClick={e => {
+                e.preventDefault()
+                capture()
+              }}
+            />
+          </Icon>
+          <Icon>
+            <FiShare
+              onClick={e => {
+                e.preventDefault()
+                dispatch(_analysis({image}))
+              }}
+            />
+          </Icon>
+        </ButtonContainer>
+      </MainContainer>
+    </Tablet>
   )
 }
 
