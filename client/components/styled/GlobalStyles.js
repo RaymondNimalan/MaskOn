@@ -14,6 +14,7 @@ html, body {
 .animated {
     display: flex;
     height: 500px;
+    width: 500px
 
 }
 .webcam {

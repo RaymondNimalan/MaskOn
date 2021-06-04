@@ -16,7 +16,7 @@ export const ButtonContainer = styled.div`
   width: 100px;
   height: 100px;
   color: white;
-  background-color: green;
+  background-color: #90cafa;
   cursor: pointer;
 `
 
@@ -30,18 +30,19 @@ export const LabelContainer = styled.div`
   width: 800px;
   flex-wrap: wrap;
   font-size: 20px;
-  color: blue;
   justify-content: space-between;
   border: solid;
-  border-color: green;
+  border-color: #c95f4f;
 `
 
 export const DataContainer = styled.div`
   display: flex;
   flex-direction: column;
+  color: #263237;
   h1 {
     font-size: 20px;
     text-decoration: underline;
+    text-decoration-color: #c95f4f;
     text-align: center;
     padding: 16px;
   }
