@@ -4,7 +4,8 @@ export const Side = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  border: 5px ridge #a3708a;
+  //border: 5px ridge #a3708a;
+  border: 5px ridge #5b7e98;
   color: #263237;
 
   @media screen and (max-width: 768px) {

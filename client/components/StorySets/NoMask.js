@@ -291,7 +291,8 @@ function NoMask() {
             transformOrigin: 291.325
           }}
           id="eltalcysuw2t"
-          fill="#90CAF9"
+          //fill="#90CAF9"
+          fill="#FDC726"
           stroke="#263238"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -433,7 +434,8 @@ function NoMask() {
             transformOrigin: 139.985
           }}
           id="elbk5sj4wkylq"
-          fill="#90CAF9"
+          //fill="#90CAF9"
+          fill="#5B7E98"
           stroke="#263238"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -466,7 +468,8 @@ function NoMask() {
               MsTransformOrigin: 141.25,
               transformOrigin: 141.25
             }}
-            fill="#FFF"
+            //fill="#FFF"
+            fill="#FDC726"
             stroke="#263238"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -495,7 +498,8 @@ function NoMask() {
             transformOrigin: 141.245
           }}
           id="eli27316n5ugi"
-          fill="#FFF"
+          //fill="#FFF"
+          fill="#FDC726"
           d="M128.07 198.31H154.42V205.56H128.07z"
           className="animable"
         />
@@ -516,7 +520,8 @@ function NoMask() {
           height="58.78"
           x="107.81"
           y="231.37"
-          fill="#90CAF9"
+          //fill="#90CAF9"
+          fill="#ffffff"
           stroke="#263238"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -735,7 +740,7 @@ function NoMask() {
               MsTransformOrigin: 140.78,
               transformOrigin: 140.78
             }}
-            fill="#FFF"
+            fill="#9BC9FF"
             stroke="#263238"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -950,7 +955,8 @@ function NoMask() {
             transformOrigin: 270.225
           }}
           id="elg9yv1cdrxo8"
-          fill="#90CAF9"
+          //fill="#90CAF9"
+          fill="#C95F4F"
           stroke="#263238"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -965,7 +971,8 @@ function NoMask() {
             transformOrigin: 270.6
           }}
           id="elsluf3camkw"
-          fill="#FFF"
+          //fill="#FFF"
+          fill="#FDC726"
           stroke="#263238"
           strokeLinecap="round"
           strokeLinejoin="round"

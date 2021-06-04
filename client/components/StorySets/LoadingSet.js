@@ -497,7 +497,8 @@ function LoadingSet() {
             transformOrigin: 376.93
           }}
           id="elly2h0kbmwdb"
-          fill="#90CAF9"
+          //fill="#90CAF9"
+          fill="#FDC726"
           className="animable"
         />
         <path
@@ -1062,7 +1063,8 @@ function LoadingSet() {
             transformOrigin: 142.84
           }}
           id="elnq4cvq13kee"
-          fill="#90CAF9"
+          //fill="#90CAF9"
+          fill="#FDC726"
           className="animable"
         />
         <path
@@ -1741,7 +1743,8 @@ function LoadingSet() {
             transformOrigin: 269.92
           }}
           id="elzgbn82nbee"
-          fill="#90CAF9"
+          //fill="#90CAF9"
+          fill="#FDC726"
           className="animable"
         />
         <path

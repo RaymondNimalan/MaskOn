@@ -32,7 +32,8 @@ export const LabelContainer = styled.div`
   font-size: 20px;
   justify-content: space-between;
   border: solid;
-  border-color: #c95f4f;
+  //border-color: #c95f4f;
+  border-color: #5b7e98;
 `
 
 export const DataContainer = styled.div`
@@ -42,7 +43,7 @@ export const DataContainer = styled.div`
   h1 {
     font-size: 20px;
     text-decoration: underline;
-    text-decoration-color: #c95f4f;
+    text-decoration-color: #5b7e98;
     text-align: center;
     padding: 16px;
   }

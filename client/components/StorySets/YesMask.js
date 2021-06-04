@@ -424,7 +424,7 @@ function YesMask() {
             transformOrigin: 415.5
           }}
           id="el6b3wl18y5zp"
-          fill="#FFC727"
+          fill="#5B7E98"
           className="animable"
         />
       </g>
@@ -1158,7 +1158,8 @@ function YesMask() {
             transformOrigin: 156.563
           }}
           id="ely3yk0sf43u9"
-          fill="#FFC727"
+          //fill="#FFC727"
+          fill="#90CAF9"
           className="animable"
         />
         <path
@@ -1169,7 +1170,8 @@ function YesMask() {
             transformOrigin: 151.488
           }}
           id="elfgo0wc3xgyh"
-          fill="#FFC727"
+          //fill="#FFC727"
+          fill="#90CAF9"
           className="animable"
         />
         <path
@@ -1180,7 +1182,8 @@ function YesMask() {
             transformOrigin: 194.251
           }}
           id="eldck4eboh8ar"
-          fill="#FFC727"
+          //fill="#FFC727"
+          fill="#90CAF9"
           className="animable"
         />
         <path
