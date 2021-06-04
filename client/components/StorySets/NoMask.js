@@ -472,7 +472,7 @@ function NoMask() {
             strokeLinejoin="round"
             strokeWidth="1.096"
             className="animable"
-            transform="rotate(-13.15)"
+            //transform="rotate(-13.15)"
           />
         </g>
         <circle
@@ -741,7 +741,7 @@ function NoMask() {
             strokeLinejoin="round"
             strokeWidth="1.096"
             className="animable"
-            transform="rotate(-45)"
+            //transform="rotate(-45)"
           />
         </g>
         <path
