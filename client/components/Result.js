@@ -8,7 +8,8 @@ import {
   ArrowIcon,
   LabelContainer,
   DataContainer,
-  Label
+  Label,
+  Header
 } from './styled/ResultStyles'
 import {toggle} from '../store/toggle'
 import {BsArrowReturnLeft} from 'react-icons/bs'
@@ -18,7 +19,7 @@ const Result = () => {
 
   const dispatch = useDispatch()
 
-  // const {labels} = useSelector((state) => state.photoReducer)
+  //const {labels} = useSelector((state) => state.photoReducer)
 
   const labels = [
     'Forehead',
@@ -35,7 +36,7 @@ const Result = () => {
     'Selfie',
     'Tints and shades',
     'Room',
-    'Personal protective equipment'
+    'Personal protective equiipment'
   ]
 
   useEffect(
@@ -57,22 +58,27 @@ const Result = () => {
 
   return (
     <MainContainer>
+      {mask ? (
+        <Header>Good Work! You Have A Mask On!</Header>
+      ) : (
+        <Header>Oh No! You Are Not Wearing A Mask!</Header>
+      )}
       {mask ? <YesMask /> : <NoMask />}
       <DataContainer>
         <h1>Labels detected within your image!</h1>
         <LabelContainer>
           {labels.map((label, index) => <Label key={index}>{label}</Label>)}
         </LabelContainer>
+        <ButtonContainer
+          onClick={e => {
+            e.preventDefault()
+            dispatch(toggle())
+          }}
+        >
+          Try Again
+          <ArrowIcon />
+        </ButtonContainer>
       </DataContainer>
-      <ButtonContainer
-        onClick={e => {
-          e.preventDefault()
-          dispatch(toggle())
-        }}
-      >
-        Try Again
-        <ArrowIcon />
-      </ButtonContainer>
     </MainContainer>
   )
 }
