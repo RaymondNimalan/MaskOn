@@ -41,6 +41,9 @@ export const Icon = styled.div`
   align-items: center;
   cursor: pointer;
   font-size: 40px;
+  &:hover {
+    color: #fdc726;
+  }
 `
 
 // export const CameraContainer = styled.div``

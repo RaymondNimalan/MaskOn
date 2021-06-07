@@ -730,7 +730,7 @@ function LoadingSet() {
             transformOrigin: 392.525
           }}
           id="elxf5f8l99jkq"
-          fill="#FFF"
+          fill="#90CAF9"
           stroke="#263238"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -2237,7 +2237,7 @@ function LoadingSet() {
             transformOrigin: 282.363
           }}
           id="elxfxam04t74"
-          fill="#FFF"
+          fill="#90CAF9"
           stroke="#263238"
           strokeLinecap="round"
           strokeLinejoin="round"

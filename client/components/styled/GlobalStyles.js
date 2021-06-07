@@ -13,8 +13,11 @@ html, body {
 
 .animated {
     display: flex;
-    height: 500px;
-    width: 500px
+    height: 450px;
+    @media screen and (max-width: 881px) {
+height: 400px;
+  }
+    //width: 450px
 
 }
 .webcam {
