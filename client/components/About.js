@@ -21,13 +21,13 @@ const About = () => {
           <h1>How It Works!</h1>{' '}
           <Icon>
             {infoToggle ? (
-              <CloseIcon
+              <OpenIcon
                 onClick={() => {
                   setInfo(!infoToggle)
                 }}
               />
             ) : (
-              <OpenIcon
+              <CloseIcon
                 onClick={() => {
                   setInfo(!infoToggle)
                 }}
@@ -51,13 +51,13 @@ const About = () => {
           <h1>Instructions:</h1>{' '}
           <Icon>
             {instructionToggle ? (
-              <CloseIcon
+              <OpenIcon
                 onClick={() => {
                   setInstruct(!instructionToggle)
                 }}
               />
             ) : (
-              <OpenIcon
+              <CloseIcon
                 onClick={() => {
                   setInstruct(!instructionToggle)
                 }}
