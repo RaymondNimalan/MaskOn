@@ -37,11 +37,17 @@ export const OpenIcon = styled(FiEye)`
   display: flex;
   cursor: pointer;
   font-size: 32px;
+  &:hover {
+    color: #fdc726;
+  }
 `
 export const CloseIcon = styled(FiEyeOff)`
   display: flex;
   cursor: pointer;
   font-size: 32px;
+  &:hover {
+    color: #fdc726;
+  }
 `
 
 // export const CameraContainer = styled.div``
