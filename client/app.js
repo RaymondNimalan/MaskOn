@@ -44,7 +44,6 @@ const MainContainer = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  //background-color: #e0d8de;
   background-color: #d6e3f8;
   @media screen and (max-width: 768px) {
     padding-top: 50px;

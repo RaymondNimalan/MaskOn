@@ -19,25 +19,25 @@ const Result = () => {
 
   const dispatch = useDispatch()
 
-  //const {labels} = useSelector((state) => state.photoReducer)
+  const {labels} = useSelector(state => state.photoReducer)
 
-  const labels = [
-    'Forehead',
-    'Nose',
-    'Chin',
-    'Eyebrow',
-    'Beard',
-    'Jaw',
-    'Neck',
-    'Eyewear',
-    'Facial hair',
-    'Cool',
-    'Moustache',
-    'Selfie',
-    'Tints and shades',
-    'Room',
-    'Personal protective equiipment'
-  ]
+  // const labels = [
+  //   'Forehead',
+  //   'Nose',
+  //   'Chin',
+  //   'Eyebrow',
+  //   'Beard',
+  //   'Jaw',
+  //   'Neck',
+  //   'Eyewear',
+  //   'Facial hair',
+  //   'Cool',
+  //   'Moustache',
+  //   'Selfie',
+  //   'Tints and shades',
+  //   'Room',
+  //   'Personal protective equiipment'
+  // ]
 
   useEffect(
     () => {
