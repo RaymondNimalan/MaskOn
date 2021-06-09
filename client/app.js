@@ -6,6 +6,7 @@ import Mask from './components/Mask'
 import Nav from './components/Nav'
 import About from './components/About'
 import SideBar from './components/SideBar'
+import Dropdown from './components/Dropdown'
 import Home from './components/Home'
 import styled from 'styled-components'
 import LoadingSet from './components/StorySets/LoadingSet'
@@ -15,8 +16,13 @@ import icon from '../public/images/icon'
 const AppContainer = styled.div`
   display: flex;
   flex-direction: row;
+  height: 100%;
+  width: 100%;
   //background-color: #deeffe;
   //z-index: -999;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 const SideBarContainer = styled.div`
   display: flex;
@@ -34,16 +40,29 @@ const SideBarContainer = styled.div`
 const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
+  //height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #f6feaa;
+  //background-color: #e0d8de;
+  background-color: #d6e3f8;
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+    height: 100vh;
+  }
 `
 const LoadingContainer = styled.div`
   display: flex;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `
+export const Header = styled.div`
+  display: flex;
+  font-size: 32px;
+  text-align: center;
+`
+
 const App = () => {
   const {loading} = useSelector(state => state.photoReducer)
 
@@ -66,6 +85,7 @@ const App = () => {
   return (
     <AppContainer>
       <Nav />
+      <Dropdown />
       <SideBarContainer>
         <ParticlesBg
           type="custom"
@@ -83,6 +103,7 @@ const App = () => {
       <MainContainer>
         {loading ? (
           <LoadingContainer>
+            <Header>Hold Tight While We Consult with our Professionals!</Header>
             <LoadingSet />
           </LoadingContainer>
         ) : (
