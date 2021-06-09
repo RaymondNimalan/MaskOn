@@ -10,7 +10,11 @@ router.post('/', async (req, res, next) => {
     // Creates a client
     const client = new vision.ImageAnnotatorClient({
       keyFilename: 'googleCreds.json',
-      projectId: 'vision-api-project-302822'
+      projectId: 'vision-api-project-302822',
+      credentials: {
+        client_email: process.env.GCP_CLIENT_EMAIL,
+        private_key: process.env.GCP_PRIVATE_KEY.split('\\n').join('\n')
+      }
     })
     //console.log('req.body', req.body)
     const {image} = req.body
