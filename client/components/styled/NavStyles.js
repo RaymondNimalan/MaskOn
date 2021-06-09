@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Navbar = styled.nav`
   display: none;
-  height: 60px;
+  height: 50px;
   width: 100%;
   position: fixed;
   z-index: 100;
@@ -26,6 +26,7 @@ export const Icon = styled.div`
   padding: 0 8px 0 8px;
   color: white;
   font-size: 48px;
+  cursor: pointer;
 `
 
 // export const CameraContainer = styled.div``
