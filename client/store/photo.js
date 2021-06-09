@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {toggle} from './toggle'
+import {homeToggle} from './toggle'
 
 // INITIAL STATE
 
@@ -49,7 +49,7 @@ export const _analysis = image => async dispatch => {
       dispatch(loading())
     }, 4000)
     setTimeout(() => {
-      dispatch(toggle())
+      dispatch(homeToggle())
     }, 4001)
   } catch (error) {
     console.log(error)
