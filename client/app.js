@@ -40,14 +40,14 @@ const SideBarContainer = styled.div`
 const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  //height: 100%;
+  height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
   background-color: #d6e3f8;
   @media screen and (max-width: 768px) {
-    padding-top: 50px;
-    height: 100vh;
+    margin-top: 50px;
+    //height: 100;
   }
 `
 const LoadingContainer = styled.div`

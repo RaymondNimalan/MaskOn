@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   display: flex;
-  position: relative;
+  //position: fixed;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   padding: 16px;
   @media screen and (max-width: 400px) {

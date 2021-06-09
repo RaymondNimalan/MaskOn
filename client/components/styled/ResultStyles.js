@@ -3,7 +3,7 @@ import {BsArrowReturnLeft} from 'react-icons/bs'
 
 export const MainContainer = styled.div`
   display: flex;
-  height: 100vh;
+  height: 100%;
   position: relative;
   flex-direction: column;
   //justify-content: space-around;
