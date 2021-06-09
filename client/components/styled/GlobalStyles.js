@@ -20,6 +20,9 @@ height: 400px;
   @media screen and (max-width: 480px) {
 height: 350px;
   }
+  @media screen and (max-width: 480px) {
+height: 300px;
+  }
     //width: 450px
 
 }

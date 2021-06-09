@@ -39,25 +39,28 @@ const SideBarContainer = styled.div`
 
 const MainContainer = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100%;
   background-color: #d6e3f8;
+  box-sizing: border-box;
   @media screen and (max-width: 768px) {
-    margin-top: 50px;
+    padding-top: 50px;
     //height: 100;
   }
 `
 const LoadingContainer = styled.div`
   display: flex;
   height: 100%;
+  //align-items: stretch;
   flex-direction: column;
   justify-content: space-evenly;
 `
 export const Header = styled.div`
   display: flex;
+  //height: 100%;
   font-size: 32px;
   text-align: center;
 `
