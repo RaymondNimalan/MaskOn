@@ -11,7 +11,7 @@ import {
   Label,
   Header
 } from './styled/ResultStyles'
-import {toggle} from '../store/toggle'
+import {homeToggle} from '../store/toggle'
 import {BsArrowReturnLeft} from 'react-icons/bs'
 
 const Result = () => {
@@ -70,9 +70,8 @@ const Result = () => {
           {labels.map((label, index) => <Label key={index}>{label}</Label>)}
         </LabelContainer>
         <ButtonContainer
-          onClick={e => {
-            e.preventDefault()
-            dispatch(toggle())
+          onClick={() => {
+            dispatch(homeToggle())
           }}
         >
           Try Again
