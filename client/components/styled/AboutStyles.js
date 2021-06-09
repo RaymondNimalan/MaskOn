@@ -4,6 +4,7 @@ import {FiEyeOff, FiEye} from 'react-icons/fi'
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 350px;
 `
 
@@ -13,6 +14,9 @@ export const HowItWorks = styled(Content)`
     display: flex;
     font-size: 24px;
     align-items: center;
+    @media screen and (max-width: 400px) {
+      font-size: 20px;
+    }
   }
   p {
     padding: 0px 4px;

@@ -17,6 +17,9 @@ html, body {
     @media screen and (max-width: 881px) {
 height: 400px;
   }
+  @media screen and (max-width: 480px) {
+height: 350px;
+  }
     //width: 450px
 
 }

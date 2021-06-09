@@ -2,7 +2,22 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  @media screen and (max-width: 400px) {
+    //width: 75%;
+  }
+`
+
+export const ScreenContainer = styled.div`
+  display: flex;
   //max-width: 640px;
+  height: 100%;
+  width: 100%;
+  //width: 75%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -12,21 +27,33 @@ export const MainContainer = styled.div`
   @media screen and (max-width: 768px) {
     //padding-top: 60px;
   }
+  @media screen and (max-width: 400px) {
+    //width: 75%;
+  }
 `
 
 export const CameraContainer = styled.div`
   display: flex;
+  width: 100%;
+  //width: 75%;
   //padding-top: 100px;
+  @media screen and (max-width: 400px) {
+    //width: 75%;
+  }
 `
 
 export const ButtonContainer = styled.div`
   display: flex;
-  width: 500px;
-  height: 100px;
-  font-size: 48px;
-  align-items: center;
+  //width: 500px;
+  width: 100%;
+  //height: 100px;
+  //font-size: 48px;
+  align-items: flex-end;
   justify-content: space-between;
   color: white;
+  @media screen and (max-width: 550px) {
+    //height: 100%;
+  }
 `
 
 export const Icon = styled.div`
@@ -34,6 +61,9 @@ export const Icon = styled.div`
   font-size: 48px;
   cursor: pointer;
   margin: 0px 32px 0px 32px;
+  @media screen and (max-width: 550px) {
+    font-size: 32px;
+  }
 `
 
 export const Tablet = styled.div`
@@ -42,15 +72,16 @@ export const Tablet = styled.div`
   //justify-content: space-between;
   //width: 768px;
   //height: 1024px;
-  height: 100vh;
-  margin: auto;
+  height: 100%;
+  width: 100%;
+  //width: 60%;
   border: 16px black solid;
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
   &:after {
     content: '';
-    display: block;
+    display: flex;
     width: 35px;
     height: 35px;
     position: absolute;
@@ -62,7 +93,7 @@ export const Tablet = styled.div`
   }
   :before {
     content: '';
-    display: block;
+    display: flex;
     width: 60px;
     height: 5px;
     position: absolute;
@@ -71,6 +102,9 @@ export const Tablet = styled.div`
     transform: translate(-50%, -50%);
     background: #333;
     border-radius: 10px;
+  }
+  @media screen and (max-width: 550px) {
+    //width: 75%;
   }
 `
 
