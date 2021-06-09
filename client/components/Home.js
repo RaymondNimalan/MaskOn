@@ -5,7 +5,7 @@ import WebcamCapture from './WebcamCapture'
 import Result from './Result'
 
 const Home = () => {
-  const homeToggle = useSelector(state => state.toggleReducer)
+  const {homeToggle} = useSelector(state => state.toggleReducer)
 
   return (
     <MainContainer>
