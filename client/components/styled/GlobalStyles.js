@@ -10,9 +10,17 @@ const GlobalStyle = createGlobalStyle`
 html, body {
     overflow-x: hidden;
 }
+body {
+    display: flex;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+        //background-color: #d6e3f8;
+
+  }
+}
 
 .animated {
-    display: flex;
+    //display: flex;
     height: 450px;
     @media screen and (max-width: 881px) {
 height: 400px;

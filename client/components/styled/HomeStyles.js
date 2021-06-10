@@ -5,8 +5,14 @@ export const MainContainer = styled.div`
   position: relative;
   flex-direction: column;
   height: 100%;
+  box-sizing: border-box;
   //width: 100%;
-  //justify-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+    //height: 100;
+  }
 `
 
 export const CameraContainer = styled.div`

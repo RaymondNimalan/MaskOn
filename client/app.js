@@ -17,7 +17,7 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   //background-color: #deeffe;
   //z-index: -999;
   @media screen and (max-width: 768px) {
@@ -42,14 +42,12 @@ const MainContainer = styled.div`
   position: relative;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  min-height: 100vh;
+  //overflow: auto;
   background-color: #d6e3f8;
   box-sizing: border-box;
-  @media screen and (max-width: 768px) {
-    padding-top: 50px;
-    //height: 100;
-  }
 `
 const LoadingContainer = styled.div`
   display: flex;
