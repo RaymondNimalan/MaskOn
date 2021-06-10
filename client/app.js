@@ -103,7 +103,7 @@ const App = () => {
       <MainContainer>
         {loading ? (
           <LoadingContainer>
-            <Header>Hold Tight While We Consult with our Professionals!</Header>
+            <Header>Hold Tight While we Consult with our Professionals!</Header>
             <LoadingSet />
           </LoadingContainer>
         ) : (

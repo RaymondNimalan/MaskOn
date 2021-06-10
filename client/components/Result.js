@@ -36,7 +36,7 @@ const Result = () => {
   //   'Selfie',
   //   'Tints and shades',
   //   'Room',
-  //   'Personal protective equiipment'
+  //   'Personal protective equipment',
   // ]
 
   useEffect(
@@ -59,9 +59,9 @@ const Result = () => {
   return (
     <MainContainer>
       {mask ? (
-        <Header>Good Work! You Have A Mask On!</Header>
+        <Header>Good Work! You Have a Mask on!</Header>
       ) : (
-        <Header>Oh No! You Are Not Wearing A Mask!</Header>
+        <Header>Oh No! You are not Wearing a Mask!</Header>
       )}
       {mask ? <YesMask /> : <NoMask />}
       <DataContainer>
