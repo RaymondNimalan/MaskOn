@@ -8,14 +8,15 @@ import {Side, Contact, Icon, Content, Title} from './styled/SideBarStyles'
 const SideBar = () => {
   return (
     <Side>
-      <Title>Covid Mask App</Title>
+      <Title>MaskOn</Title>
       <Content>
         <About />
         <Contact>
           <Icon>
             <FiGithub
               onClick={() => {
-                window.location = 'https://github.com/RaymondNimalan'
+                window.location =
+                  'https://github.com/RaymondNimalan/CovidMaskApp'
               }}
             />
           </Icon>

@@ -50,7 +50,7 @@ const Dropdown = () => {
           width: '100%'
         }}
       />
-      <Title>Covid Mask App</Title>
+      <Title>MaskOn</Title>
       <Content>
         <AboutContainer>
           <About />
@@ -59,7 +59,8 @@ const Dropdown = () => {
           <Icon>
             <FiGithub
               onClick={() => {
-                window.location = 'https://github.com/RaymondNimalan'
+                window.location =
+                  'https://github.com/RaymondNimalan/CovidMaskApp'
               }}
             />
           </Icon>
