@@ -40,6 +40,10 @@ export const CameraContainer = styled.div`
   @media screen and (max-width: 400px) {
     //width: 75%;
   }
+  img {
+    //display: flex;
+    width: 100%;
+  }
 `
 
 export const ButtonContainer = styled.div`
