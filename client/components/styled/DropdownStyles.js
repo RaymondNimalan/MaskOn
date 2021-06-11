@@ -6,15 +6,18 @@ export const DropdownContainer = styled.div`
   z-index: 999;
   flex-direction: column;
   position: absolute;
+  overflow: scroll;
   //justify-content: space-around;
   align-items: center;
   height: 100%;
+  min-height: 100vh;
   width: 60%;
   top: 0;
   right: 0;
   background-color: white;
   opacity: ${({isOpen}) => (isOpen ? '1' : '0')};
   top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+  z-index: ${({isOpen}) => (isOpen ? '999' : '-999')};
   transition: 0.2s ease-in-out;
   box-shadow: -2px 0 2px grey;
   border: 5px ridge #5b7e98;
