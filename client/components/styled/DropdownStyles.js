@@ -7,7 +7,6 @@ export const DropdownContainer = styled.div`
   flex-direction: column;
   position: absolute;
   overflow: scroll;
-  //justify-content: space-around;
   align-items: center;
   height: 100%;
   min-height: 100vh;
@@ -21,13 +20,12 @@ export const DropdownContainer = styled.div`
   transition: 0.2s ease-in-out;
   box-shadow: -2px 0 2px grey;
   border: 5px ridge #5b7e98;
+  border-radius: 10px;
 `
 export const AboutContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-around;
-  /* flex-direction: column;
-  justify-content: space-around; */
 `
 export const Title = styled.div`
   display: flex;
@@ -57,6 +55,9 @@ export const Icon = styled.div`
   align-items: center;
   cursor: pointer;
   font-size: 40px;
+  &:hover {
+    color: #fdc726;
+  }
 `
 
 export const CloseIcon = styled(FaRegTimesCircle)`
@@ -65,6 +66,7 @@ export const CloseIcon = styled(FaRegTimesCircle)`
   top: 12px;
   right: 12px;
   cursor: pointer;
+  &:hover {
+    color: #fdc726;
+  }
 `
-
-// export const CameraContainer = styled.div``

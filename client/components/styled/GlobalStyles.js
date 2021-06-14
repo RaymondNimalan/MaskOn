@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
 }
 
 html, body {
@@ -13,10 +14,6 @@ html, body {
 body {
     display: flex;
     height: 100%;
-    @media screen and (max-width: 768px) {
-        //background-color: #d6e3f8;
-
-  }
 }
 
 .animated {
@@ -31,7 +28,6 @@ height: 350px;
   @media screen and (max-width: 480px) {
 height: 300px;
   }
-    //width: 450px
 
 }
 .webcam {

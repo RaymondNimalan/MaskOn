@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const Side = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  //border: 5px ridge #a3708a;
+  height: 100%;
   border: 5px ridge #5b7e98;
   color: #263237;
+  border-radius: 10px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -18,7 +18,7 @@ export const Title = styled.div`
   justify-content: center;
   font-size: 32px;
   padding: 8px 8px;
-  margin-bottom: 16px;
+  margin: 16px;
 `
 
 export const Content = styled.div`
@@ -45,11 +45,3 @@ export const Icon = styled.div`
     color: #fdc726;
   }
 `
-
-// export const CameraContainer = styled.div``
-
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``

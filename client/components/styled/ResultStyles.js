@@ -11,23 +11,15 @@ export const MainContainer = styled.div`
   justify-content: space-evenly;
   position: relative;
   align-items: center;
-  /* @media screen and (min-width: 768px) {
-    max-height: 100vh;
-    justify-content: space-between;
-  } */
 `
 export const Header = styled.div`
   display: flex;
   font-size: 32px;
   width: 100%;
   justify-content: center;
-  //align-items: center;
 
   text-align: center;
-  padding: 16px;
-  @media screen and (max-width: 768px) {
-    padding: 16px 16px 0 16px;
-  }
+  padding: 16px 16px 0 16px;
   @media screen and (max-width: 400px) {
     font-size: 28px;
   }
@@ -35,11 +27,8 @@ export const Header = styled.div`
 
 export const DataContainer = styled.div`
   display: flex;
-  //height: 100%;
   width: 100%;
-  //max-height: 300px;
   box-sizing: border-box;
-  //align-self: flex-end;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -52,29 +41,21 @@ export const DataContainer = styled.div`
     text-decoration-color: #5b7e98;
     text-align: center;
   }
-  @media screen and (max-width: 768px) {
-    //justify-content: center;
-  }
 `
 export const LabelContainer = styled.div`
   display: flex;
-  //height: 100%;
   width: 100%;
   box-sizing: border-box;
   //max-height: 300px;
   //max-width: 80%;
   flex-wrap: wrap;
   font-size: 20px;
-  justify-content: space-evenly;
-  //align-items: stretch;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border: solid;
-  //border-color: #c95f4f;
   border-color: #5b7e98;
-  @media screen and (max-width: 380px) {
-    //width: 75%;
-    //font-size: 16px;
-  }
+  border-radius: 10px;
 `
 
 export const Label = styled.div`
@@ -86,8 +67,6 @@ export const Label = styled.div`
   border-radius: 5px;
   padding: 4px;
   margin: 4px;
-  @media screen and (max-width: 380px) {
-  }
 `
 
 export const ButtonContainer = styled.div`
@@ -100,9 +79,10 @@ export const ButtonContainer = styled.div`
   color: white;
   background-color: #263237;
   cursor: pointer;
-  margin: 16px;
+  margin-top: 16px;
   border: solid;
   border-color: #5b7e98;
+  border-radius: 10px;
 
   &:hover {
     border-color: #fdc726;
@@ -114,7 +94,10 @@ export const ButtonContainer = styled.div`
 export const ArrowIcon = styled(BsArrowReturnLeft)`
   display: flex;
   font-size: 32px;
+  height: 100%;
 `
 
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``
+export const Title = styled.div`
+  display: flex;
+  color: white;
+`

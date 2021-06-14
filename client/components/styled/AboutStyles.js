@@ -53,6 +53,3 @@ export const CloseIcon = styled(FiEyeOff)`
     color: #fdc726;
   }
 `
-
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``

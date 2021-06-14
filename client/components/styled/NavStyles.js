@@ -17,8 +17,10 @@ export const Navbar = styled.nav`
 
 export const NavMenu = styled.div`
   display: flex;
+  height: 100%;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 `
 
 export const Icon = styled.div`
@@ -27,9 +29,13 @@ export const Icon = styled.div`
   color: white;
   font-size: 48px;
   cursor: pointer;
+  height: 100%;
 `
 
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``
-// export const CameraContainer = styled.div``
+export const Title = styled.div`
+  display: flex;
+  font-size: 28px;
+  color: white;
+  padding-left: 8px;
+  //height: 100%;
+`
