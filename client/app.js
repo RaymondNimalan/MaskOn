@@ -18,8 +18,6 @@ const AppContainer = styled.div`
   flex-direction: row;
   height: 100%;
   width: 100vw;
-  //background-color: #deeffe;
-  //z-index: -999;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -30,8 +28,6 @@ const SideBarContainer = styled.div`
   width: 100%;
   max-width: 350px;
   object-fit: contain;
-  //background-color: #f6feaa;
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -45,20 +41,17 @@ const MainContainer = styled.div`
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  //overflow: auto;
   background-color: #d6e3f8;
   box-sizing: border-box;
 `
 const LoadingContainer = styled.div`
   display: flex;
   height: 100%;
-  //align-items: stretch;
   flex-direction: column;
   justify-content: space-evenly;
 `
 export const Header = styled.div`
   display: flex;
-  //height: 100%;
   font-size: 32px;
   text-align: center;
 `
@@ -103,7 +96,7 @@ const App = () => {
       <MainContainer>
         {loading ? (
           <LoadingContainer>
-            <Header>Hold Tight While we Consult with our Professionals!</Header>
+            <Header>Hold Tight while we Consult with our Professionals!</Header>
             <LoadingSet />
           </LoadingContainer>
         ) : (

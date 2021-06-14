@@ -9,10 +9,10 @@ import {
   LabelContainer,
   DataContainer,
   Label,
-  Header
+  Header,
+  Title
 } from './styled/ResultStyles'
 import {homeToggle} from '../store/toggle'
-import {BsArrowReturnLeft} from 'react-icons/bs'
 
 const Result = () => {
   const [mask, setMask] = useState(false)
@@ -74,7 +74,7 @@ const Result = () => {
             dispatch(homeToggle())
           }}
         >
-          Try Again
+          <Title>Try Again</Title>
           <ArrowIcon />
         </ButtonContainer>
       </DataContainer>

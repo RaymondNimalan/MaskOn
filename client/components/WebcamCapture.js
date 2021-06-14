@@ -11,6 +11,8 @@ import {
   Tablet,
   MainContainer
 } from './styled/WebcamStyles'
+import {Toast} from '../components/Toast/toast'
+import './Toast/toast.css'
 
 const WebcamCapture = () => {
   const [image, setImage] = useState('')
@@ -31,8 +33,15 @@ const WebcamCapture = () => {
     setImage(null)
   }
 
+  const imgError = () => {
+    return new Toast({
+      message: 'This is a danger message. You can use this for errors etc',
+      type: 'danger'
+    })
+  }
+
   return (
-    <MainContainer>
+    <MainContainer error={() => imgError()}>
       <Tablet>
         <ScreenContainer>
           <CameraContainer>
