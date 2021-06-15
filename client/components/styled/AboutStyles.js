@@ -19,7 +19,7 @@ export const HowItWorks = styled(Content)`
     }
   }
   p {
-    padding: 0px 4px;
+    padding: 0px 4px 4px;
   }
 `
 export const Instructions = styled(HowItWorks)``
