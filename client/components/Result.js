@@ -21,36 +21,14 @@ const Result = () => {
 
   const {labels} = useSelector(state => state.photoReducer)
 
-  // const labels = [
-  //   'Forehead',
-  //   'Nose',
-  //   'Chin',
-  //   'Eyebrow',
-  //   'Beard',
-  //   'Jaw',
-  //   'Neck',
-  //   'Eyewear',
-  //   'Facial hair',
-  //   'Cool',
-  //   'Moustache',
-  //   'Selfie',
-  //   'Tints and shades',
-  //   'Room',
-  //   'Personal protective equipment',
-  // ]
-
   useEffect(
     () => {
-      console.log(labels)
       if (labels.includes('Mask')) {
         setMask(true)
-        console.log(mask)
       } else if (labels.includes('Personal protective equipment')) {
         setMask(true)
-        console.log(mask)
       } else {
         setMask(false)
-        console.log('mask', mask)
       }
     },
     [labels]
