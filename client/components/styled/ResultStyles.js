@@ -19,7 +19,7 @@ export const Header = styled.div`
   justify-content: center;
 
   text-align: center;
-  padding: 16px 16px 0 16px;
+  padding: 24px 24px 0 24px;
   @media screen and (max-width: 400px) {
     font-size: 28px;
   }
