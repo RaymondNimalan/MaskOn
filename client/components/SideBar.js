@@ -13,8 +13,7 @@ const SideBar = () => {
           <Icon>
             <FiGithub
               onClick={() => {
-                window.location =
-                  'https://github.com/RaymondNimalan/CovidMaskApp'
+                window.location = 'https://github.com/RaymondNimalan/MaskOn'
               }}
             />
           </Icon>
