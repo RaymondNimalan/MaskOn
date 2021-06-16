@@ -2,7 +2,7 @@
 
 Created by [Ray Nimalan](https://www.linkedin.com/in/raymond-nimalan/)
 
-MaskOn is a responsive web application that utilizes label detection through machine learning to determine if a person is wearing a mask to help prevent the spread of Coivid-19
+MaskOn is a responsive web application that utilizes label detection through machine learning to determine if a person is wearing a mask to help prevent the spread of Covid-19
 
 ## How it works!
 
